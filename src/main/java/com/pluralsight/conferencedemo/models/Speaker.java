@@ -14,8 +14,19 @@ public class Speaker {
     private String company;
     private String speaker_bio;
 
+    @ManyToMany(mappedBy = "speakers")
+    private List<Session> sessions;
+
     public Speaker() {
 
+    }
+
+    public List<Session> getSessions() {
+        return sessions;
+    }
+
+    public void setSessions(List<Session> sessions) {
+        this.sessions = sessions;
     }
 
     public Long getSpeaker_id() {

@@ -1,10 +1,10 @@
 package com.pluralsight.conferencedemo.models;
 
-import com.fasterxml.jackson.annotation.JsonSubTypes;
 import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
 import java.util.List;
+
 
 @Entity(name = "speakers")
 public class Speaker {
